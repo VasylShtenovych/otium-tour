@@ -19,6 +19,9 @@ a{
     color: white;
 
     header{
+        .navbar-light .navbar-nav .nav-link{
+            color: white;
+        }
         ul{
             li:not(:last-child){
                 margin-right: 65px;
@@ -78,10 +81,9 @@ a{
 #our-services{
     background: url("img/services_bg.jpg") no-repeat center / cover;
     margin-top: 60px;
-    height: 450px;
+    padding: 75px 0 95px;
 
     h2{
-        padding-top: 65px;
         margin-bottom: 60px;
     }
     .service{
@@ -165,7 +167,7 @@ a{
     .contact{
         img{
             margin: 0 auto;
-            height: 85px;
+            max-height: 85px;
         }
         #email-img{
             height: 70px;
@@ -204,4 +206,37 @@ footer{
     }
     
 
+}
+
+
+
+
+@media screen and (max-width: 992px){
+    #first-screen{
+        header{
+            .navbar-light .navbar-nav .nav-link{
+                color: rgba(0,0,0,.5);
+                
+            }
+            .navbar{
+                background-color: white;
+            }
+            .logo{
+                height: 50px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    #first-screen{
+        .otium-title{
+            margin-top: 50px;
+            font-size: 28px;
+        }
+        .otium-desc{
+            font-size: 18px;
+            margin-top: 7px;
+        }
+    }
 }

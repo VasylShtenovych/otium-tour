@@ -13,6 +13,8 @@ a {
   min-height: 95vh;
   background: url("img/first_screen_bg.jpg") no-repeat bottom/cover;
   color: white; }
+  #first-screen header .navbar-light .navbar-nav .nav-link {
+    color: white; }
   #first-screen header ul li:not(:last-child) {
     margin-right: 65px; }
   #first-screen header ul li {
@@ -54,9 +56,8 @@ a {
 #our-services {
   background: url("img/services_bg.jpg") no-repeat center/cover;
   margin-top: 60px;
-  height: 450px; }
+  padding: 75px 0 95px; }
   #our-services h2 {
-    padding-top: 65px;
     margin-bottom: 60px; }
   #our-services .service img {
     max-width: 100%; }
@@ -112,7 +113,7 @@ a {
     margin-top: 40px; }
   #contacts .contact img {
     margin: 0 auto;
-    height: 85px; }
+    max-height: 85px; }
   #contacts .contact #email-img {
     height: 70px; }
 
@@ -136,5 +137,20 @@ footer {
     background-color: rgba(255, 255, 255, 0.3); }
     footer .top-link-container .top-link {
       height: 15px; }
+
+@media screen and (max-width: 992px) {
+  #first-screen header .navbar-light .navbar-nav .nav-link {
+    color: rgba(0, 0, 0, 0.5); }
+  #first-screen header .navbar {
+    background-color: white; }
+  #first-screen header .logo {
+    height: 50px; } }
+@media screen and (max-width: 576px) {
+  #first-screen .otium-title {
+    margin-top: 50px;
+    font-size: 28px; }
+  #first-screen .otium-desc {
+    font-size: 18px;
+    margin-top: 7px; } }
 
 /*# sourceMappingURL=styles.css.map */
